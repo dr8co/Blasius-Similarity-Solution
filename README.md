@@ -5,8 +5,10 @@ The similarity variables are given by
 
 $$
 \begin{align}
-    \eta = y \sqrt{U\over xv}\\
-    f'(\eta) = {u\over U}\\
+    \eta = y \sqrt{U\over xv},\\
+    \\
+    f'(\eta) = {u\over U},\\
+    \\
     \sqrt{U\nu\over x}{(nf' - f)}
 \end{align}
 $$
@@ -18,8 +20,10 @@ The Boundary conditions are given as:
 
 $$
 \begin{align}
-    f(0) = 0\\
-    f'(0) = 0\\
+    f(0) = 0,\\
+    \\
+    f'(0) = 0,\\
+    \\
     f'(\infty) = 1
 \end{align}
 $$
