@@ -10,7 +10,7 @@ $$
     \\
     f'(\eta) = {u\over U},\\
     \\
-    {1/2}\sqrt{U\nu\over x}{(nf' - f)}
+    {1\over 2}\sqrt{U\nu\over x}{(nf' - f)}
 \end{align}
 $$
 
