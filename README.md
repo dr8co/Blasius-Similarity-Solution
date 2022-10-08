@@ -10,13 +10,13 @@ $$
     \\
     f'(\eta) = {u\over U},\\
     \\
-    \sqrt{U\nu\over x}{(nf' - f)}
+    {1/2}\sqrt{U\nu\over x}{(nf' - f)}
 \end{align}
 $$
 
 $U$ denotes the freestream velocity.
 The Blasius similarity equation is given by:
-$$ff'' + f''' = 0$$
+$$ff'' + 2f''' = 0$$
 The Boundary conditions are given as:
 
 $$
