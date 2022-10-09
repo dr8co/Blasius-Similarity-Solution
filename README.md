@@ -69,8 +69,8 @@ $$\dfrac {\rho U^2}{L} = \mu \dfrac {U}{\delta ^2}$$
 $$\therefore \delta = \sqrt {\dfrac {\mu L}{\rho U}} =
 \sqrt {\dfrac {\nu L}{U}} = \sqrt {\dfrac {\nu x}{U}} \tag{3}$$
 
-The dimensionless velocity $\dfrac{u}{U}$ can be expressed at any location Sx$ as a function
-of the dimensionless distance from the wall $\dfrac {y}{\delta}$.
+The dimensionless velocity $\dfrac{u}{U}$ can be expressed at any location Sx$
+as a function of the dimensionless distance from the wall $\dfrac {y}{\delta}$.
 
 $$\dfrac {u}{U}=f \biggl(\dfrac {y}{\delta} \biggr) \tag{4}$$
 
