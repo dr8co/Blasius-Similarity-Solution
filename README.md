@@ -123,5 +123,7 @@ $$
 Or,
 
 $$
+\begin{equation}
 \dfrac {\partial u}{\partial x} = -U \dfrac {\eta}{2x} \dfrac {d^2 f}{d\eta ^2} \tag{9}
+\end{equation}
 $$
