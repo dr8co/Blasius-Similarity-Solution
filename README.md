@@ -10,7 +10,7 @@ $$
 \begin{align}
     \eta ={\dfrac {y}{\delta (x)}}=y{\sqrt {\dfrac {U}{\nu x}}},\\
     \\
-    \quad \psi ={\sqrt {U \nu x}}f(\eta )\\
+    \psi ={\sqrt {U \nu x}}f(\eta )\\
     \\
     f'(\eta) = {\dfrac {u}{U}},\\
     \\
@@ -18,9 +18,9 @@ $$
 $$
 
 &emsp; &emsp; &emsp; Where:\
-&emsp; &emsp; &emsp; &emsp; $\delta (x)$ is the boundary layer thickness,\
-&emsp; &emsp; &emsp; &emsp; $\psi$ is the stream function, and\
-&emsp; &emsp; &emsp; &emsp; $U$ denotes the freestream velocity, and $u$ the local velocity.
+$\quad \quad \quad \quad \delta (x)$ is the boundary layer thickness,\
+$\quad \quad \quad \quad \psi$ is the stream function, and\
+$\quad \quad \quad \quad U$ denotes the freestream velocity, and $u$ the local velocity.
 
 The Blasius similarity equation is given by:
 $$ff'' + 2f''' = 0$$
@@ -55,6 +55,17 @@ The Blasius technique for an exact solution for the hydrodynamic layer lies in t
 
 $$\dfrac {\partial u}{\partial x} + \dfrac {\partial \nu}{\partial y}=0$$
 
-As $u>\nu,$
+As $u\ge \nu,$
 $$\rho u\dfrac {\partial u}{\partial x}=\mu \dfrac {\partial ^2 u}{\partial y^2}$$
 &emsp; &emsp; &emsp; since $\nu = \dfrac {\mu} {\rho}$.
+
+Also, as $u \propto U$ and $\dfrac {\partial u}{\partial x} \propto \dfrac {U}{L},$
+along a plate length $L,$ therefore,
+
+$$\dfrac {\rho U^2}{L} = \mu \dfrac {U}{\delta ^2}$$
+$$\therefore \delta = \sqrt {\dfrac {\mu L}{\rho U}} = \sqrt {\dfrac {\nu L}{U}} = \sqrt {\dfrac {\nu x}{U}}$$
+
+The dimensionless velocity $\dfrac{u}{U}$ can be expressed at any location x as a function
+of the dimensionless distance from the wall $\dfrac {y}{\delta}$.
+
+$$\dfrac {u}{U}=f\biggl(\dfrac {y}{\delta}\biggr).
