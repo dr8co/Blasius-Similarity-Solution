@@ -37,3 +37,24 @@ $$
 $$
 
 ## Derivation
+
+The momentum equation for a hydrodynamic boundary layer over a flat plate is given as:
+
+$$u \dfrac {\partial u}{\partial x} + v \dfrac {\partial u}{\partial x} = \nu \dfrac {\partial ^2 u}{\partial y^2}$$
+
+The velocity distribution in the boundary layer can be obtained by solving the equation above.
+The following boundary conditions are satisfied:
+
+* $(i)$ &emsp; At $y = 0, u = 0,$
+
+* $(ii)$&emsp;At $y = 0, \nu = 0,$
+
+* $(iii)$&emsp;At $y = \infty , u = U.$
+
+The Blasius technique for an exact solution for the hydrodynamic layer lies in the conversion of momentum equation and the continuity equation:
+
+$$\dfrac {\partial u}{\partial x} + \dfrac {\partial \nu}{\partial y}=0$$
+
+As $u>\nu,$
+$$\rho u\dfrac {\partial u}{\partial x}=\mu \dfrac {\partial ^2 u}{\partial y^2}$$
+&emsp; &emsp; &emsp; since $\nu = \dfrac {\mu} {\rho}$.
