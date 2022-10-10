@@ -75,15 +75,22 @@ lies in the conversion of momentum equation and the continuity equation:
 $$\dfrac {\partial u}{\partial x} + \dfrac {\partial v}{\partial y}=0 \tag{2}$$
 
 As $u\ge v,$
-$$\rho u\dfrac {\partial u}{\partial x}=\mu \dfrac {\partial ^2 u}{\partial y^2}$$
+
+$$
+\rho u\dfrac {\partial u}{\partial x}=\mu \dfrac {\partial ^2 u}{\partial y^2}
+$$
+
 &emsp; &emsp; &emsp; since $\nu = \dfrac {\mu} {\rho}$.
 
 Also, as $u \propto U$ and $\dfrac {\partial u}{\partial x} \propto \dfrac {U}{L},$
 along a plate length $L,$ therefore,
 
 $$\dfrac {\rho U^2}{L} = \mu \dfrac {U}{\delta ^2}$$
-$$\therefore \delta = \sqrt {\dfrac {\mu L}{\rho U}} =
-\sqrt {\dfrac {\nu L}{U}} = \sqrt {\dfrac {\nu x}{U}} \tag{3}$$
+
+$$
+\therefore \delta = \sqrt {\dfrac {\mu L}{\rho U}} =
+\sqrt {\dfrac {\nu L}{U}} = \sqrt {\dfrac {\nu x}{U}} \tag{3}
+$$
 
 The dimensionless velocity $\dfrac{u}{U}$ can be expressed at any location $x$
 as a function of the dimensionless distance from the wall $\dfrac {y}{\delta}$.
@@ -92,10 +99,12 @@ $$\dfrac {u}{U}=f \Biggl(\dfrac {y}{\delta} \Biggr) \tag{4}$$
 
 Substituting the value of $\delta$ from eqn. $(3)$ in eqn. $(4)$, we obtain,
 
-$$\dfrac {u}{U}=f\Biggl[\dfrac {y}{\sqrt {x}} \sqrt {\dfrac {U}{\nu}}\Biggr]
-= f(\eta) \tag{5}$$
+$$
+\dfrac {u}{U}=f\Biggl[\dfrac {y}{\sqrt {x}} \sqrt {\dfrac {U}{\nu}}\Biggr]
+= f(\eta) \tag{5}
+$$
 
-Where, $\quad \eta = y \sqrt {\dfrac {U}{\nu x}} $ denotes the stretching factor
+Where, $\quad \eta = y \sqrt {\dfrac {U}{\nu x}}$ denotes the stretching factor
 
 The stream function, $\psi$, can be defined such that,
 
@@ -110,8 +119,10 @@ gives the velocity in the $Y$-direction (generally **taken as negative**)
 and its partial differential with respect $y$ gives the velocity
 in the $X$-direction:
 
-$$u = \dfrac {\partial \psi}{\partial y}; \quad \quad
-v = \dfrac {\partial \psi}{\partial x}$$
+$$
+u = \dfrac {\partial \psi}{\partial y}; \quad \quad
+v = \dfrac {\partial \psi}{\partial x}
+$$
 
 $$
 \therefore \dfrac {\partial \psi}{\partial y} = \dfrac {\partial \psi}{\partial \eta}
