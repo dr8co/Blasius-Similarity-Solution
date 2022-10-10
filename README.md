@@ -57,7 +57,8 @@ The momentum equation for a hydrodynamic boundary layer over a flat plate is giv
 
 $$
 u \dfrac {\partial u}{\partial x} + v \dfrac {\partial u}{\partial x} =
-\nu \dfrac {\partial ^2 u}{\partial y^2} \tag{1}
+\nu \dfrac {\partial ^2 u}{\partial y^2}\\
+\tag{1}\
 $$
 
 The velocity distribution in the boundary layer can be obtained by solving the equation above.
@@ -72,7 +73,10 @@ The following boundary conditions are satisfied:
 The Blasius technique for an exact solution for the hydrodynamic layer
 lies in the conversion of momentum equation and the continuity equation:
 
-$$\dfrac {\partial u}{\partial x} + \dfrac {\partial v}{\partial y}=0 \tag{2}$$
+$$
+\dfrac {\partial u}{\partial x} + \dfrac {\partial v}{\partial y}=0\\
+\tag{2}\
+$$
 
 As $u\ge v,$
 
@@ -89,30 +93,41 @@ $$\dfrac {\rho U^2}{L} = \mu \dfrac {U}{\delta ^2}$$
 
 $$
 \therefore \delta = \sqrt {\dfrac {\mu L}{\rho U}} =
-\sqrt {\dfrac {\nu L}{U}} = \sqrt {\dfrac {\nu x}{U}} \tag{3}
+\sqrt {\dfrac {\nu L}{U}} = \sqrt {\dfrac {\nu x}{U}}\\
+\tag{3}\
 $$
 
 The dimensionless velocity $\dfrac{u}{U}$ can be expressed at any location $x$
 as a function of the dimensionless distance from the wall $\dfrac {y}{\delta}$.
 
-$$\dfrac {u}{U}=f \Biggl(\dfrac {y}{\delta} \Biggr) \tag{4}$$
+$$
+\dfrac {u}{U}=f \Biggl(\dfrac {y}{\delta} \Biggr)\\
+\tag{4}\
+$$
 
 Substituting the value of $\delta$ from eqn. $(3)$ in eqn. $(4)$, we obtain,
 
 $$
 \dfrac {u}{U}=f\Biggl[\dfrac {y}{\sqrt {x}} \sqrt {\dfrac {U}{\nu}}\Biggr]
-= f(\eta) \tag{5}
+= f(\eta)\\
+\tag{5}\
 $$
 
 Where, $\quad \eta = y \sqrt {\dfrac {U}{\nu x}}$ denotes the stretching factor
 
 The stream function, $\psi$, can be defined such that,
 
-$$\dfrac {\psi}{U} = \Biggl [\sqrt {\dfrac {\nu x}{U}} \Biggr] f(\eta) \tag{6}$$
+$$
+\dfrac {\psi}{U} = \Biggl [\sqrt {\dfrac {\nu x}{U}} \Biggr] f(\eta)\\
+\tag{6}\
+$$
 
 Or,
 
-$$\psi = \sqrt {\nu x U} f(\eta) \tag{7}$$
+$$
+\psi = \sqrt {\nu x U} f(\eta)\\
+\tag{7}\
+$$
 
 The partial differential of the stream function with respect to $x$
 gives the velocity in the $Y$-direction (generally **taken as negative**)
@@ -135,7 +150,8 @@ Or,
 
 $$
 u=U\sqrt {\dfrac {\nu x}{U}} \dfrac {df}{d\eta}\Biggl [\sqrt {\dfrac {U}{\nu x}} \Biggr]
-= U\dfrac {df}{d\eta} \tag {8}
+= U\dfrac {df}{d\eta}\\
+\tag {8}\
 $$
 
 Here $f$ is abbreviated as $f(\eta)$
@@ -150,7 +166,8 @@ $$
 Or,
 
 $$
-\dfrac {\partial u}{\partial x} = -U \dfrac {\eta}{2x} \dfrac {d^2 f}{d\eta ^2} \tag{9}
+\dfrac {\partial u}{\partial x} = -U \dfrac {\eta}{2x} \dfrac {d^2 f}{d\eta ^2}\\
+\tag{9}\
 $$
 
 Now,
@@ -159,14 +176,16 @@ $$
 \dfrac {\partial u}{\partial y}={U}{\dfrac {\partial}{\partial y}}\Biggl (\dfrac {df}{d\eta}\Biggr)
 ={U}{\dfrac {\partial}{\partial \eta}}\Biggl(\dfrac {\partial f}{\partial \eta}\Biggr)
 \dfrac {\partial \eta}{\partial y} \cdot {U}{\sqrt {\dfrac {U}{\nu x}}}
-\cdot \dfrac {d^2 f}{d\eta ^2} \tag{10}
+\cdot \dfrac {d^2 f}{d\eta ^2} \\
+\tag{10}\
 $$
 
 Similarly,
 
 $$
 \dfrac {\partial ^2 u}{\partial y^2} = \dfrac {U^2}{\nu x}
-\cdot \dfrac {d^3 f}{d\eta ^3} \tag{11}
+\cdot \dfrac {d^3 f}{d\eta ^3}\\
+\tag{11}\
 $$
 
 Again,
@@ -201,7 +220,8 @@ $$
 
 $$
 \begin{align}
-& v = \dfrac {1}{2} \sqrt {\dfrac {U\nu}{x}} \Biggl[ -\eta \dfrac {df}{d\eta} -f \Biggr] \tag{12}
+& v = \dfrac {1}{2} \sqrt {\dfrac {U\nu}{x}} \Biggl[ -\eta \dfrac {df}{d\eta} -f \Biggr]\\
+\tag{12}\
 \end{align}
 $$
 
@@ -247,7 +267,8 @@ $$
 Or,
 
 $$
-2f''' + f'' = 0 \tag{13} \\
+2f''' + f'' = 0\\
+\tag{13}\
 $$
 
 The physical and transformed boundary conditions are:
