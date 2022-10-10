@@ -63,11 +63,11 @@ $$
 The velocity distribution in the boundary layer can be obtained by solving the equation above.
 The following boundary conditions are satisfied:
 
-* $(i)$ &emsp; At $y = 0, u = 0,$
+* $(i)$ &emsp; At $y = 0, \quad u = 0,$
 
-* $(ii)$&emsp;At $y = 0, \nu = 0,$
+* $(ii)$&emsp;At $y = 0, \quad \nu = 0,$
 
-* $(iii)$&emsp;At $y = \infty , u = U.$
+* $(iii)$&emsp;At $y = \infty , \quad u = U.$
 
 The Blasius technique for an exact solution for the hydrodynamic layer
 lies in the conversion of momentum equation and the continuity equation:
