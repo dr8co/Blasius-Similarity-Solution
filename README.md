@@ -195,8 +195,8 @@ $$
 $$
 
 Inserting the values of $u, \dfrac {\partial u}{\partial x}, \dfrac {\partial u}{\partial y}$,
-$\dfrac {\partial ^2 u}{\partial x^2}$ and $v$ from eqns. $(8), (9),
-(10),$ and $(11)$ in eqn $(1)$, we get
+$\dfrac {\partial ^2 u}{\partial x^2}$ and $v$ from eqns. $(8), (9),$
+$(10),$ and $(11)$ in eqn $(1)$, we get
 
 $$
 -U\dfrac {df}{d\eta} \cdot U \dfrac {\eta}{zx} \cdot \dfrac {d^2 f}{d\eta ^2} +
