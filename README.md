@@ -66,7 +66,7 @@ The following boundary conditions are satisfied:
 
 * $(i)$ &emsp; At $y = 0, \quad u = 0,$
 
-* $(ii)$&emsp;At $y = 0, \quad \nu = 0,$
+* $(ii)$&emsp;At $y = 0, \quad v = 0,$
 
 * $(iii)$&emsp;At $y = \infty , \quad u = U.$
 
