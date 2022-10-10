@@ -220,8 +220,7 @@ $$
 
 $$
 \begin{align}
-& v = \dfrac {1}{2} \sqrt {\dfrac {U\nu}{x}} \Biggl[ -\eta \dfrac {df}{d\eta} -f \Biggr]\\
-\tag{12}
+& v = \dfrac {1}{2} \sqrt {\dfrac {U\nu}{x}} \Biggl[ -\eta \dfrac {df}{d\eta} -f \Biggr] \tag{12}
 \end{align}
 $$
 
