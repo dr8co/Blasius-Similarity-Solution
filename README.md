@@ -9,11 +9,11 @@ The similarity variables are given by:
 
 $$
 \begin{align*}
-    \eta ={\dfrac {y}{\delta (x)}}=y{\sqrt {\dfrac {U}{\nu x}}},\\
+    & \eta ={\dfrac {y}{\delta (x)}}=y{\sqrt {\dfrac {U}{\nu x}}},\\
     \\
-    \psi ={\sqrt {U \nu x}}f(\eta )\\
+    & \psi ={\sqrt {U \nu x}}f(\eta )\\
     \\
-    f'(\eta) = {\dfrac {u}{U}}.\\
+    & f'(\eta) = {\dfrac {u}{U}}.\\
 \end{align*}
 $$
 
@@ -28,11 +28,11 @@ The Boundary conditions are given as:
 
 $$
 \begin{align*}
-    f(0) = 0,\\
+    & f(0) = 0,\\
     \\
-    f'(0) = 0,\\
+    & f'(0) = 0,\\
     \\
-    f'(\infty) = 1
+    & f'(\infty) = 1.
 \end{align*}
 $$
 
@@ -40,8 +40,10 @@ $$
 
 The momentum equation for a hydrodynamic boundary layer over a flat plate is given as:
 
-$$u \dfrac {\partial u}{\partial x} + v \dfrac {\partial u}{\partial x} =
-\nu \dfrac {\partial ^2 u}{\partial y^2} \tag{1}$$
+$$
+u \dfrac {\partial u}{\partial x} + v \dfrac {\partial u}{\partial x} =
+\nu \dfrac {\partial ^2 u}{\partial y^2} \tag{1}
+$$
 
 The velocity distribution in the boundary layer can be obtained by solving the equation above.
 The following boundary conditions are satisfied:
@@ -71,18 +73,18 @@ $$\therefore \delta = \sqrt {\dfrac {\mu L}{\rho U}} =
 The dimensionless velocity $\dfrac{u}{U}$ can be expressed at any location Sx$
 as a function of the dimensionless distance from the wall $\dfrac {y}{\delta}$.
 
-$$\dfrac {u}{U}=f \biggl(\dfrac {y}{\delta} \biggr) \tag{4}$$
+$$\dfrac {u}{U}=f \Biggl(\dfrac {y}{\delta} \Biggr) \tag{4}$$
 
 Substituting the value of $\delta$ from eqn. $(3)$ in eqn. $(4)$, we obtain,
 
-$$\dfrac {u}{U}=f\biggl[\dfrac {y}{\sqrt {x}} \sqrt {\dfrac {U}{\nu}}\biggr]
+$$\dfrac {u}{U}=f\Biggl[\dfrac {y}{\sqrt {x}} \sqrt {\dfrac {U}{\nu}}\Biggr]
 = f(\eta) \tag{5}$$
 
 Where, $\quad \eta = y \sqrt {\dfrac {U}{\nu x}} $
 
 The stream function, $\psi$ can be defined such that,
 
-$$\dfrac {\psi}{U} = \biggl [\sqrt {\dfrac {\nu x}{U}} \biggr] f(\eta) \tag{6}$$
+$$\dfrac {\psi}{U} = \Biggl [\sqrt {\dfrac {\nu x}{U}} \Biggr] f(\eta) \tag{6}$$
 
 Or,
 
@@ -99,14 +101,14 @@ v = \dfrac {\partial \psi}{\partial x}$$
 $$
 \therefore \dfrac {\partial \psi}{\partial y} = \dfrac {\partial \psi}{\partial \eta}
 \times \dfrac {\partial \eta}{\partial y} = \dfrac {\partial}{\partial \eta}
-\biggl[U\sqrt{\dfrac {\nu x}{U}}f(\eta) \biggr] \times
-\dfrac {\partial}{\partial y} \biggl[y \sqrt{\dfrac {U}{\nu x}} \biggr]
+\Biggl[U\sqrt{\dfrac {\nu x}{U}}f(\eta) \Biggr] \times
+\dfrac {\partial}{\partial y} \Biggl[y \sqrt{\dfrac {U}{\nu x}} \Biggr]
 $$
 
 Or,
 
 $$
-u=U\sqrt {\dfrac {\nu x}{U}} \dfrac {df}{d\eta}\biggl [\sqrt {\dfrac {U}{\nu x}} \biggr]
+u=U\sqrt {\dfrac {\nu x}{U}} \dfrac {df}{d\eta}\Biggl [\sqrt {\dfrac {U}{\nu x}} \Biggr]
 = U\dfrac {df}{d\eta} \tag {8}
 $$
 
@@ -128,8 +130,8 @@ $$
 Now,
 
 $$
-\dfrac {\partial u}{\partial y}={U}{\dfrac {\partial}{\partial y}}\biggl (\dfrac {df}{d\eta}\biggr)
-={U}{\dfrac {\partial}{\partial \eta}}\biggl(\dfrac {\partial f}{\partial \eta}\biggr)
+\dfrac {\partial u}{\partial y}={U}{\dfrac {\partial}{\partial y}}\Biggl (\dfrac {df}{d\eta}\Biggr)
+={U}{\dfrac {\partial}{\partial \eta}}\Biggl(\dfrac {\partial f}{\partial \eta}\Biggr)
 \dfrac {\partial \eta}{\partial y} \cdot {U}{\sqrt {\dfrac {U}{\nu x}}}
 \cdot \dfrac {d^2 f}{d\eta ^2} \tag{10}
 $$
@@ -177,4 +179,55 @@ $$
 \end{align}
 $$
 
-c
+Inserting the values of $u, \dfrac {\partial u}{\partial x}, \dfrac {\partial u}{\partial y},
+\dfrac {\partial ^2 u}{\partial x^2} $ and $v$ from eqns. $(8), (9),
+(10),$ and $(11)$ in eqn $(1)$, we get
+
+$$
+-U\dfrac {df}{d\eta} \cdot U \dfrac {\eta}{zx} \cdot \dfrac {d^2 f}{d\eta ^2} +
+\dfrac {1}{2} \sqrt {\dfrac {U\nu}{x}} \Biggl[\eta \dfrac {df}{d\eta} -f \Biggr]
+\cdot U\sqrt {\dfrac {U}{\nu x}} \dfrac {d^2 f}{d\eta ^2} = \nu \dfrac {U^2}{\nu x}
+\cdot \dfrac {d^3 f}{d \eta ^3}
+$$
+
+Or,
+
+$$
+-\dfrac {1}{2x} \cdot U^2 \dfrac {df}{d\eta} \cdot \eta \dfrac {d^2 f}{d\eta ^2} +
+\dfrac {1}{2x}U^2 \dfrac {d^2 f}{d\eta ^2} \Biggl[\eta \dfrac {df}{d\eta} - f \Biggr]
+=\dfrac {U^2}{x} \cdot \dfrac {d^3 f}{d\eta ^3}
+$$
+
+Or,
+
+$$
+-\dfrac {1}{2x} U^2 \dfrac {d^2 f}{d\eta ^2} \Biggl[\eta \dfrac {df}{d\eta}-
+\eta \dfrac {df}{d\eta} + f \Biggr] = \dfrac {U^2}{x} \cdot \dfrac {d^3 f}{d\eta ^3}
+$$
+
+Or,
+
+$$
+-\dfrac {1}{2x}U^2 \dfrac {d^2 f}{d\eta ^2} \cdot f = \dfrac {U^2}{x}
+\cdot \dfrac {d^3 f}{d\eta ^3}
+$$
+
+Or,
+
+$$
+2 \dfrac {d^3 f}{d\eta ^3} + f \dfrac {d^2 f}{d\eta ^2} = 0
+$$
+
+Or,
+
+$$
+2f''' + f'' = 0 \tag{13} \\
+$$
+
+The physical and transformed boundary conditions are:
+
+| Physical boundary conditions | Transformed boundary conditions                      |
+|------------------------------|------------------------------------------------------|
+| at $y = 0, \quad u = 0$      | at $\eta = 0, \quad \dfrac {df}{d\eta} = f'= 0$      |
+| at $y = 0, \quad v = 0$      | at $\eta = 0, \quad f = 0$                           |
+| at $y = \infty, \quad u = U$ | at $\eta = \infty, \quad \dfrac {df}{d\eta} = f'= 1$ |
