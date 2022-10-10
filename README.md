@@ -72,9 +72,9 @@ The following boundary conditions are satisfied:
 The Blasius technique for an exact solution for the hydrodynamic layer
 lies in the conversion of momentum equation and the continuity equation:
 
-$$\dfrac {\partial u}{\partial x} + \dfrac {\partial \nu}{\partial y}=0 \tag{2}$$
+$$\dfrac {\partial u}{\partial x} + \dfrac {\partial v}{\partial y}=0 \tag{2}$$
 
-As $u\ge \nu,$
+As $u\ge v,$
 $$\rho u\dfrac {\partial u}{\partial x}=\mu \dfrac {\partial ^2 u}{\partial y^2}$$
 &emsp; &emsp; &emsp; since $\nu = \dfrac {\mu} {\rho}$.
 
@@ -85,7 +85,7 @@ $$\dfrac {\rho U^2}{L} = \mu \dfrac {U}{\delta ^2}$$
 $$\therefore \delta = \sqrt {\dfrac {\mu L}{\rho U}} =
 \sqrt {\dfrac {\nu L}{U}} = \sqrt {\dfrac {\nu x}{U}} \tag{3}$$
 
-The dimensionless velocity $\dfrac{u}{U}$ can be expressed at any location Sx$
+The dimensionless velocity $\dfrac{u}{U}$ can be expressed at any location $x$
 as a function of the dimensionless distance from the wall $\dfrac {y}{\delta}$.
 
 $$\dfrac {u}{U}=f \Biggl(\dfrac {y}{\delta} \Biggr) \tag{4}$$
@@ -95,9 +95,9 @@ Substituting the value of $\delta$ from eqn. $(3)$ in eqn. $(4)$, we obtain,
 $$\dfrac {u}{U}=f\Biggl[\dfrac {y}{\sqrt {x}} \sqrt {\dfrac {U}{\nu}}\Biggr]
 = f(\eta) \tag{5}$$
 
-Where, $\quad \eta = y \sqrt {\dfrac {U}{\nu x}} $
+Where, $\quad \eta = y \sqrt {\dfrac {U}{\nu x}} $ denotes the stretching factor
 
-The stream function, $\psi$ can be defined such that,
+The stream function, $\psi$, can be defined such that,
 
 $$\dfrac {\psi}{U} = \Biggl [\sqrt {\dfrac {\nu x}{U}} \Biggr] f(\eta) \tag{6}$$
 
@@ -106,7 +106,7 @@ Or,
 $$\psi = \sqrt {\nu x U} f(\eta) \tag{7}$$
 
 The partial differential of the stream function with respect to $x$
-gives the velocity in the $Y$-direction (generally taken as negative)
+gives the velocity in the $Y$-direction (generally **taken as negative**)
 and its partial differential with respect $y$ gives the velocity
 in the $X$-direction:
 
@@ -194,8 +194,8 @@ $$
 \end{align}
 $$
 
-Inserting the values of $u, \dfrac {\partial u}{\partial x}, \dfrac {\partial u}{\partial y},
-\dfrac {\partial ^2 u}{\partial x^2} $ and $v$ from eqns. $(8), (9),
+Inserting the values of $u, \dfrac {\partial u}{\partial x}, \dfrac {\partial u}{\partial y}$,
+$\dfrac {\partial ^2 u}{\partial x^2}$ and $v$ from eqns. $(8), (9),
 (10),$ and $(11)$ in eqn $(1)$, we get
 
 $$
