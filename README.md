@@ -8,14 +8,13 @@ for a flow over a flat plate of length unity.\
 The similarity variables are given by:
 
 $$
-\begin{align}
+\begin{align*}
     \eta ={\dfrac {y}{\delta (x)}}=y{\sqrt {\dfrac {U}{\nu x}}},\\
     \\
     \psi ={\sqrt {U \nu x}}f(\eta )\\
     \\
-    f'(\eta) = {\dfrac {u}{U}},\\
-    \\
-\end{align}
+    f'(\eta) = {\dfrac {u}{U}}.\\
+\end{align*}
 $$
 
 &emsp; &emsp; &emsp; Where:\
@@ -28,13 +27,13 @@ $$ff'' + 2f''' = 0$$
 The Boundary conditions are given as:
 
 $$
-\begin{align}
+\begin{align*}
     f(0) = 0,\\
     \\
     f'(0) = 0,\\
     \\
     f'(\infty) = 1
-\end{align}
+\end{align*}
 $$
 
 ## Derivation
@@ -124,4 +123,56 @@ Or,
 
 $$
 \dfrac {\partial u}{\partial x} = -U \dfrac {\eta}{2x} \dfrac {d^2 f}{d\eta ^2} \tag{9}
+$$
+
+Now,
+
+$$
+\dfrac {\partial u}{\partial y}={U}{\dfrac {\partial}{\partial y}}\biggl (\dfrac {df}{d\eta}\biggr)
+={U}{\dfrac {\partial}{\partial \eta}}\biggl(\dfrac {\partial f}{\partial \eta}\biggr)
+\dfrac {\partial \eta}{\partial y} \cdot {U}{\sqrt {\dfrac {U}{\nu x}}}
+\cdot \dfrac {d^2 f}{d\eta ^2} \tag{10}
+$$
+
+Similarly,
+
+$$
+\dfrac {\partial ^2 u}{\partial y^2} = \dfrac {U^2}{\nu x}
+\cdot \dfrac {d^3 f}{d\eta ^3} \tag{11}
+$$
+
+Again,
+
+$$
+\begin{align*}
+& v = - \dfrac {\partial \psi}{\partial x} = - \dfrac {\partial}{\partial x}
+\Biggl [\sqrt {\dfrac {\nu x}{U}}f(\eta) \Biggr] = -U\sqrt {\dfrac {\nu}{U}}
+\cdot \dfrac {\partial}{\partial x}[\sqrt {x}f(\eta)] \\
+\\
+& =-U\sqrt {\dfrac {\nu}{U}} \cdot \Biggl[\sqrt {x}\dfrac {\partial f}{\partial x} +
+f \cdot \dfrac {\partial}{\partial x}(\sqrt {x})\Biggr]\\
+\\
+& =-U\sqrt {\dfrac {\nu}{U}} \cdot \Biggl[\sqrt {x}\dfrac {\partial f}{\partial \eta}
+\cdot \dfrac {\partial \eta}{\partial x} + \dfrac {f}{2\sqrt{x}}\Biggr] \\
+\\
+& =-U\sqrt {\dfrac {\nu}{U}} \cdot \Biggl[\sqrt {x}\dfrac {\partial f}{\partial \eta}
+\cdot \dfrac {\partial}{\partial x} \Biggl(y\sqrt {\dfrac {U}{\nu x}}\Biggr) +
+\dfrac {f}{2\sqrt {x}} \Biggr] \\
+\\
+& =-U\sqrt {\dfrac {\nu}{U}} \cdot \Biggl[\sqrt {x}\dfrac {\partial f}{\partial \eta}
+\cdot y\sqrt {\dfrac {U}{\nu}} \Biggl(-\dfrac {1}{2} \Biggr) \dfrac {1}{x\sqrt {x}} +
+\dfrac {f}{2\sqrt {f}} \Biggr] \\
+\\
+& =-\sqrt {U\nu} \dfrac {1}{2\sqrt {x}} \Biggl[-\dfrac {df}{d\eta}y
+\sqrt {\dfrac {U}{\nu x}} + f \Biggr] \\
+\\
+& =-\dfrac {1}{2} \sqrt {\dfrac {Ux}{x}} \Biggl[-\eta \dfrac {df}{d\eta} + f \Biggr] \\
+\\
+\end{align*}
+$$
+
+$$
+\begin{align}
+& v = \dfrac {1}{2} \sqrt {\dfrac {U\nu}{x}} \Biggl[ -\eta \dfrac {df}{d\eta} -f \Biggr] \tag{12}
+\end{align}
 $$
