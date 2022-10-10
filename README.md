@@ -18,7 +18,7 @@ Blasius obtained an exact solution for the
 [Boundary Layer Equations](https://en.wikipedia.org/wiki/Boundary_layer#Boundary_layer_equations)
 by assuming a zero pressure gradient.
 
-[This solution](#this-solution) considers the [Blasius Exact Solution](https://en.wikipedia.org/wiki/Blasius_boundary_layer)
+[This numerical solution](#this-solution) considers the [Blasius Exact Solution](https://en.wikipedia.org/wiki/Blasius_boundary_layer)
 for laminar boundary layer flow over a flat plate.\
 The similarity variables are given as:
 
