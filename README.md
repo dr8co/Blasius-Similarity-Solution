@@ -1,19 +1,32 @@
 # A Numerical Solution to the Blasius Boundary Layer Equation
 
+## Table of Content
+
+* [Overview](#overview)
+* [Derivation](#derivation)
+* [This solution](#this-solution)
+
+_________________________________________________________
+
 ## Overview
 
-This solution considers the Similarity Solution for a
-[Blasius Boundary Layer](https://en.wikipedia.org/wiki/Blasius_boundary_layer)
-for a flow over a flat plate of length unity.\
-The similarity variables are given by:
+A Blasius boundary layer (named after [Paul Richard Heinrich Blasius](https://en.wikipedia.org/wiki/Paul_Richard_Heinrich_Blasius))
+describes the steady two-dimensional laminar boundary layer that forms on a semi-infinite plate
+which is held parallel to a constant unidirectional flow.
+
+Blasius obtained an exact solution for the
+[Boundary Layer Equations](https://en.wikipedia.org/wiki/Boundary_layer#Boundary_layer_equations)
+by assuming a zero pressure gradient.
+
+[This solution](#this-solution) considers the [Blasius Exact Solution](https://en.wikipedia.org/wiki/Blasius_boundary_layer)
+for laminar boundary layer flow over a flat plate.\
+The similarity variables are given as:
 
 $$
 \begin{align*}
     & \eta ={\dfrac {y}{\delta (x)}}=y{\sqrt {\dfrac {U}{\nu x}}},\\
     \\
     & \psi ={\sqrt {U \nu x}}f(\eta )\\
-    \\
-    & f'(\eta) = {\dfrac {u}{U}}.\\
 \end{align*}
 $$
 
@@ -35,6 +48,8 @@ $$
     & f'(\infty) = 1.
 \end{align*}
 $$
+
+_________________________________________________________
 
 ## Derivation
 
@@ -231,3 +246,7 @@ The physical and transformed boundary conditions are:
 | at $y = 0, \quad u = 0$      | at $\eta = 0, \quad \dfrac {df}{d\eta} = f'= 0$      |
 | at $y = 0, \quad v = 0$      | at $\eta = 0, \quad f = 0$                           |
 | at $y = \infty, \quad u = U$ | at $\eta = \infty, \quad \dfrac {df}{d\eta} = f'= 1$ |
+
+_________________________________________________________
+
+## This Solution
