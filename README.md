@@ -7,6 +7,7 @@ This solution considers the Similarity Solution for a
 for a flow over a flat plate of length unity.\
 The similarity variables are given by:
 
+$\documentclass[reqno]{amsart}$
 $$
 \begin{align*}
     \eta ={\dfrac {y}{\delta (x)}}=y{\sqrt {\dfrac {U}{\nu x}}},\\
@@ -176,3 +177,5 @@ $$
 & v = \dfrac {1}{2} \sqrt {\dfrac {U\nu}{x}} \Biggl[ -\eta \dfrac {df}{d\eta} -f \Biggr] \tag{12}
 \end{align}
 $$
+
+c
