@@ -1,3 +1,0 @@
-/home/draco/CLionProjects/Blasius-Similarity-Solution/cmake-build-debug/CMakeFiles/blasius.dir
-/home/draco/CLionProjects/Blasius-Similarity-Solution/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/draco/CLionProjects/Blasius-Similarity-Solution/cmake-build-debug/CMakeFiles/rebuild_cache.dir

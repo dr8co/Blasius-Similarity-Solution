@@ -1,14 +1,6 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-
 # Object files
 *.o
+solution/*.o
 
 # Libraries
 *.a
@@ -19,5 +11,13 @@
 *.app
 ?
 
+# Other files
+*.?ml
+solution/CMake*
+solution/cmake*
+solution/.ninja*
+
 # Other config directories
 .*/**
+cmake-*/**
+solution/CMake*/**

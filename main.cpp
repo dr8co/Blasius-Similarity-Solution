@@ -18,7 +18,7 @@ int main() {
     double random_number = dist(engine);
 
     // approximating the boundary condition f"(0) with an initial guess (the generated pseudo-random number):
-    double fDoublePrime_0{boundaryCondition(0.1)};
+    double fDoublePrime_0{boundaryCondition(random_number)};
 
     // 0.33205733716392832333
 
