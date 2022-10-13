@@ -1,40 +1,32 @@
 /**
-* classname.h: header file for Class_Name
-* Author:  Ian Duncan
-*      with assistance from:
-*
-* Description of the role or purpose of objects of this class goes here
-*
-* Constructors:
-*      constructor prototype 1
-*          Description of constructor, e.g., copy constructor
-*
-*      constructor prototype 2
-*          Description of constructor, e.g., copy constructor
-*
-* Public Member Functions:
-*
-*      f_1
-*        precondition:
-*        postcondition:
-*          Description of what the function does, what input it expects,
-*              what output it generates, what it returns.
-*
-*      f_2
-*        precondition:
-*        postcondition:
-*          Description of what the function does, what input it expects,
-*              what output it generates, what it returns.
-*/
+ * @file Blas.h
+ * @author Ian Duncan (dr8co@duck.com)
+ * @brief Header file for class Blas
+ * @version 0.1
+ * @date 2022-10-13
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 
 #ifndef BLASIUS_BLAS_H
 #define BLASIUS_BLAS_H
 
 namespace blas {
 
+    /**
+     * @brief the class Blas contains three linear equations
+     * derived from the Blasius equation.
+     * To avoid function overloading (and reduce code size), the functions
+     * were declared with unused parameters so that all the calls to the
+     * three functions would be uniform and easier to debug.
+     * The [[maybe_unused]] attribute was used to suppress compiler warnings
+     * for the unused parameters.
+     */
     class Blas {
     public:
         Blas() = default;
+
         virtual ~Blas() = default;
 
         static double
