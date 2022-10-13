@@ -6,3 +6,18 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Object files
+*.o
+
+# Libraries
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+?
+
+# Other config directories
+.*/**
