@@ -1,7 +1,7 @@
 /**
  * @file Blas.h
  * @author Ian Duncan (dr8co@duck.com)
- * @brief Header file for class Blas
+ * @brief Header file for namespace blas/class Blas
  * @version 0.1
  * @date 2022-10-13
  * 

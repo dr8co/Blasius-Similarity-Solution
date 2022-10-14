@@ -11,17 +11,13 @@
 
 #include <iostream>
 #include <iomanip>
-#include <chrono>
 #include <random>
 
 #include "headers/blasius.h"
 
 int main() {
     std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~ Blasius Numerical Solution ~~~~~~~~~~~~~~~~~~~~~~~~~ \n" << std::endl;
-    std::cout << R"(The Blasius Equation: f''' + ff" = 0)" << std::endl;
-
-    // Save the time point to mark the start of the solution
-    auto start = std::chrono::high_resolution_clock::now();
+    std::cout << R"(The Blasius Equation: 2f''' + ff" = 0)" << std::endl;
 
     // Generate a pseudo-random number for the initial guess of f"(0):
     std::random_device generator;
@@ -37,17 +33,6 @@ int main() {
 
     // solve the Blasius equation using the optimum f"(0)
     blasius(fDoublePrime_0);
-
-    // save the time point to mark the end of the solution
-    auto stop = std::chrono::high_resolution_clock::now();
-
-    // Calculate how long it took to solve the equation
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
-
-    std::cout << "\n\n\t\tTime taken: " << duration.count() << " milliseconds.\n" << std::endl;
-
-    // For debugging purposes only
-    std::cout << "\nRandom number: " << random_number << std::endl;
 
     return 0;
 }

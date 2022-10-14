@@ -176,11 +176,11 @@ void blasius(double f_p_p) {
     }
 
     // writing the data to a comma-separated values (csv) file, for storage of the solution.
-    std::filesystem::path cwd = std::filesystem::current_path() / "Blasius_solution.csv";
+    std::filesystem::path file_path = std::filesystem::current_path() / "Blasius_solution.csv";
     std::fstream file;
 
     // open the file in truncation mode and write the data.
-    file.open(cwd, std::ios::out | std::ios::trunc);
+    file.open(file_path, std::ios::out | std::ios::trunc);
     file << "eta," << "f," << "fPrime," << "fDoublePrime" << std::endl;
 
     for (int j = 0; j < eta_vec.size(); j++) {
@@ -192,5 +192,5 @@ void blasius(double f_p_p) {
 
     // show the path to the saved data.
     std::filesystem::current_path();
-    std::cout << "\nThe solution data has been saved as " << cwd << std::endl;
+    std::cout << "\nThis data has been saved as " << file_path << std::endl;
 }
