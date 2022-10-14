@@ -4,7 +4,8 @@
 
 * [Overview](#overview)
 * [Derivation](#derivation)
-* [This solution](#this-solution)
+* [Implementation summary](#implementation-summary)
+* [How to Compile](#running-the-solution)
 
 _________________________________________________________
 
@@ -18,7 +19,7 @@ Blasius obtained an exact solution for the
 [Boundary Layer Equations](https://en.wikipedia.org/wiki/Boundary_layer#Boundary_layer_equations)
 by assuming a zero pressure gradient.
 
-[This numerical solution](#this-solution) considers the [Blasius Exact Solution](https://en.wikipedia.org/wiki/Blasius_boundary_layer)
+[This numerical solution](#implementation-summary) considers the [Blasius Exact Solution](https://en.wikipedia.org/wiki/Blasius_boundary_layer)
 for laminar boundary layer flow over a flat plate.\
 The similarity variables are given as:
 
@@ -280,4 +281,32 @@ The physical and transformed boundary conditions are:
 
 _________________________________________________________
 
-## This Solution 
+## Implementation summary
+
+The Blasius equation is decomposed to a system of coupled 3 linear ODEs:
+
+$$
+f' = f_1 \\
+$$
+
+$$
+f_1' = f_2 \\
+$$
+
+$$
+f_2' = - \dfrac {f \cdot f_2}{2}
+$$
+
+This system of equation are then solved numerically using
+the fourth-order Runge-Kutta (RK4) numerical scheme.
+
+A random number is used as the initial guess for $f''(0)$ in this project. The guss is then adjusted
+until the boundary condition $f'(\infty) = 1$ is satisfied (with an allowance of ${10}^{-12}$). The data is written to a file,
+which can be accessed and evaluated.
+
+## Running the solution
+
+The code in this project requires at least **C++17** to run. Compile with flag `-std=c++17`.
+You can run [run.sh](./run.sh) script to run the solution, or [run_with_cmake](run_with_cmake.sh)
+to compile using `CMake`(version $\ge$ 3.20) and run.
+These two scripts compile and run in `/solution/` directory in the working directory.
