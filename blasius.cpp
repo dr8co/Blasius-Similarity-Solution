@@ -77,7 +77,7 @@ double rungeKutta(double f_p_p) {
 /**
  * @brief
  * the adjustGuess function adjusts the initial guess of f"(0) Boundary condition until it
- * satisfies the f'(infinity) = 1, with an allowance of 10^-12.
+ * satisfies the f'(infinity) = 1, with a tolerance of 10^-12.
  * alpha dictates the rate at which the guess is adjusted. While larger alpha yields
  * results faster, these results are less accurate. Smaller alpha is preferred for accuracy of
  * the solution.
