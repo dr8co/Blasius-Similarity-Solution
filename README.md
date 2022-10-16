@@ -11,13 +11,14 @@ _________________________________________________________
 
 ## Overview
 
-A Blasius boundary layer (named after [Paul Richard Heinrich Blasius](https://en.wikipedia.org/wiki/Paul_Richard_Heinrich_Blasius))
+A Blasius boundary layer
+(named after [Paul Richard Heinrich Blasius](https://en.wikipedia.org/wiki/Paul_Richard_Heinrich_Blasius))
 describes the steady two-dimensional laminar boundary layer that forms on a semi-infinite plate
 which is held parallel to a constant unidirectional flow.
 
 Blasius obtained an exact solution for the
 [Boundary Layer Equations](https://en.wikipedia.org/wiki/Boundary_layer#Boundary_layer_equations)
-by assuming a zero pressure gradient.
+by assuming a zero-pressure gradient.
 
 [This numerical solution](#implementation-summary) considers the
 [Blasius Exact Solution](https://en.wikipedia.org/wiki/Blasius_boundary_layer) for laminar boundary layer
@@ -73,7 +74,7 @@ The following boundary conditions are satisfied:
 * $(iii)$&emsp;At $y = \infty , \quad u = U.$
 
 The Blasius technique for an exact solution for the hydrodynamic layer
-lies in the conversion of momentum equation and the continuity equation:
+lies in the conversion of the momentum equation and the continuity equation:
 
 $$
 \dfrac {\partial u}{\partial x} + \dfrac {\partial v}{\partial y}=0\\
@@ -132,8 +133,8 @@ $$
 $$
 
 The partial differential of the stream function with respect to $x$
-gives the velocity in the $Y$-direction (generally **taken as negative**)
-and its partial differential with respect $y$ gives the velocity
+gives the velocity in the $Y$-direction (generally **taken as negative**),
+and its partial differential with respect to $y$ gives the velocity
 in the $X$-direction:
 
 $$
@@ -298,17 +299,20 @@ $$
 f_2' = - \dfrac {f \cdot f_2}{2}
 $$
 
-This system of equation are then solved numerically using
+This system of equation is then solved numerically using
 the fourth-order Runge-Kutta (RK4) numerical scheme.
 
-A random number is used as the initial guess for $f''(0)$ in this project. The guss is then adjusted
+A random number is used as the initial guess for $f''(0)$ in this project.
+The guss is then adjusted
 until the boundary condition $f'(\infty) = 1$ is satisfied (with a tolerance of ${10}^{-12}$).
 The data is written to a file, which can be accessed and evaluated.
 
 ## Running the solution
 
-The code in this project requires at least **C++17** to run. Compile with flag `-std=c++17`.
-You can run [run.sh](./run.sh) script to run the solution, or use `CMake` and `Ninja` to build
-using [run_with_cmake](run_with_cmake.sh) script.
-The script requires `CMake`version $\ge$ 3.20. Both scripts compile and run in
+The code in this project requires at least **C++17** to run.
+Compile with flag `-std=c++17`.
+You can run the [run.sh](./run.sh) script to run the solution, or use `CMake` and `Ninja` to build
+using the [run_with_cmake](run_with_cmake.sh) script.
+The script requires `CMake`version $\ge$ 3.20.
+Both scripts compile and run in
 `/solution/` directory in the working directory.
