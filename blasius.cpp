@@ -45,7 +45,7 @@ double rungeKutta(double f_p_p) {
     const int t{1000};
     const double h{0.01};
 
-    for (int i = 0; i <= t; i++) {
+    for (int i = 0; i <= t; ++i) {
         // Apply Runge-Kutta 4 (RK4) to solve the system of equations for one time-step
         k1 = h * blas::Blas::f_1(eta, f, f_p, f_p_p);
         l1 = h * blas::Blas::f_2(eta, f, f_p, f_p_p);
@@ -138,7 +138,7 @@ void blasius(double f_p_p) {
     // Vectors to store the solution data for eta, f, f' and f"
     std::vector<double> eta_vec, f_vec, fPrime_vec, fDoublePrime_vec;
 
-    for (int i = 0; i <= t; i++) {
+    for (int i = 0; i <= t; ++i) {
         // Apply RK4 to solve the system of equations.
         k1 = h * blas::Blas::f_1(eta, f, f_p, f_p_p);
         l1 = h * blas::Blas::f_2(eta, f, f_p, f_p_p);
@@ -183,7 +183,7 @@ void blasius(double f_p_p) {
     file.open(file_path, std::ios::out | std::ios::trunc);
     file << "eta," << "f," << "fPrime," << "fDoublePrime" << std::endl;
 
-    for (int j = 0; j < eta_vec.size(); j++) {
+    for (int j = 0; j < eta_vec.size(); ++j) {
         file << std::setprecision(12) << eta_vec[j] << "," << f_vec[j] << "," << fPrime_vec[j] << ","
              << fDoublePrime_vec[j] << "\n";
     }
@@ -191,6 +191,5 @@ void blasius(double f_p_p) {
     file.close();
 
     // show the path to the saved data.
-    std::filesystem::current_path();
     std::cout << "\nThis data has been saved as " << file_path << std::endl;
 }

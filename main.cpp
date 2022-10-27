@@ -23,7 +23,7 @@ int main() {
     std::random_device generator;
     std::mt19937 engine{generator()};
     std::uniform_real_distribution<> dist(-10.f, 10.f);
-    double random_number = dist(engine);
+    double random_number{dist(engine)};
 
     // Use the random number as the initial guess of f"(0) to find the optimum f"(0)
     double fDoublePrime_0{adjustGuess(random_number)};

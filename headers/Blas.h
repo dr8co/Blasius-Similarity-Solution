@@ -42,6 +42,7 @@ namespace blas {
         static double f_3([[maybe_unused]] double a, double b, [[maybe_unused]] double c, double d) {
             return -b * d / 2;
         }
+
     };
 
 } // blas
