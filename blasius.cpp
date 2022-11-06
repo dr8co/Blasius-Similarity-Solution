@@ -17,7 +17,21 @@
 #include <cmath>
 
 #include "headers/blasius.h"
-#include "headers/Blas.h"
+
+double
+f_1([[maybe_unused]] double a, [[maybe_unused]] double b, double c, [[maybe_unused]] double d) {
+    return c;
+}
+
+double
+f_2([[maybe_unused]] double a, [[maybe_unused]] double b, [[maybe_unused]] double c, double d) {
+    return d;
+}
+
+double
+f_3([[maybe_unused]] double a, double b, [[maybe_unused]] double c, double d) {
+    return -b * d / 2;
+}
 
 /**
  * @brief
@@ -47,21 +61,21 @@ double rungeKutta(double f_p_p) {
 
     for (int i = 0; i <= t; ++i) {
         // Apply Runge-Kutta 4 (RK4) to solve the system of equations for one time-step
-        k1 = h * blas::Blas::f_1(eta, f, f_p, f_p_p);
-        l1 = h * blas::Blas::f_2(eta, f, f_p, f_p_p);
-        m1 = h * blas::Blas::f_3(eta, f, f_p, f_p_p);
+        k1 = h * f_1(eta, f, f_p, f_p_p);
+        l1 = h * f_2(eta, f, f_p, f_p_p);
+        m1 = h * f_3(eta, f, f_p, f_p_p);
 
-        k2 = h * blas::Blas::f_1((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
-        l2 = h * blas::Blas::f_2((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
-        m2 = h * blas::Blas::f_3((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
+        k2 = h * f_1((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
+        l2 = h * f_2((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
+        m2 = h * f_3((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
 
-        k3 = h * blas::Blas::f_1((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
-        l3 = h * blas::Blas::f_2((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
-        m3 = h * blas::Blas::f_3((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
+        k3 = h * f_1((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
+        l3 = h * f_2((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
+        m3 = h * f_3((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
 
-        k4 = h * blas::Blas::f_1((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
-        l4 = h * blas::Blas::f_2((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
-        m4 = h * blas::Blas::f_3((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
+        k4 = h * f_1((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
+        l4 = h * f_2((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
+        m4 = h * f_3((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
 
         // Update the values of f, f_p, and f_p_p
         f += (k1 + 2 * k2 + 2 * k3 + k4) / 6;
@@ -140,21 +154,21 @@ void blasius(double f_p_p) {
 
     for (int i = 0; i <= t; ++i) {
         // Apply RK4 to solve the system of equations.
-        k1 = h * blas::Blas::f_1(eta, f, f_p, f_p_p);
-        l1 = h * blas::Blas::f_2(eta, f, f_p, f_p_p);
-        m1 = h * blas::Blas::f_3(eta, f, f_p, f_p_p);
+        k1 = h * f_1(eta, f, f_p, f_p_p);
+        l1 = h * f_2(eta, f, f_p, f_p_p);
+        m1 = h * f_3(eta, f, f_p, f_p_p);
 
-        k2 = h * blas::Blas::f_1((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
-        l2 = h * blas::Blas::f_2((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
-        m2 = h * blas::Blas::f_3((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
+        k2 = h * f_1((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
+        l2 = h * f_2((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
+        m2 = h * f_3((eta + 0.5 * h), (f + 0.5 * k1), (f_p + 0.5 * l1), (f_p_p + 0.5 * m1));
 
-        k3 = h * blas::Blas::f_1((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
-        l3 = h * blas::Blas::f_2((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
-        m3 = h * blas::Blas::f_3((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
+        k3 = h * f_1((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
+        l3 = h * f_2((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
+        m3 = h * f_3((eta + 0.5 * h), (f + 0.5 * k2), (f_p + 0.5 * l2), (f_p_p + 0.5 * m2));
 
-        k4 = h * blas::Blas::f_1((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
-        l4 = h * blas::Blas::f_2((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
-        m4 = h * blas::Blas::f_3((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
+        k4 = h * f_1((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
+        l4 = h * f_2((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
+        m4 = h * f_3((eta + h), (f + k3), (f_p + l3), (f_p_p + m3));
 
         // print the solution for each value of eta
         std::cout << "eta = " << std::fixed << std::setprecision(10) << eta << ":  f = " << f
