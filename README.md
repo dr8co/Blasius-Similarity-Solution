@@ -311,8 +311,9 @@ The data is written to a file, which can be accessed and evaluated.
 
 The code in this project requires at least **C++17** to run.
 Compile with flag `-std=c++17`.
-You can run the [run.sh](./run_scripts/run.sh) script to run the solution, or use `CMake` and `Ninja` to build
-using the [run_with_cmake](./run_scripts/run_with_cmake.sh) script.
+You can run the `run.sh` script in the [run_scripts directory](./run_scripts/) to run the solution,
+or with `CMake` and `Ninja build`
+using `run_with_cmake.sh`.
 The script requires `CMake`version $\ge$ 3.20.
 Both scripts compile and run in
 `/solution/` directory in the working directory.
