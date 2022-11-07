@@ -318,5 +318,5 @@ The script requires `CMake`version $\ge$ 3.20.
 
 Both scripts compile and run in
 `/solution/` directory in the working directory, but should be executed
-from the **project root**.
-`clean.sh` can be used to clean the compiled results.
+from the [**project root**](./).
+`clean.sh` can be used to clean the compiled files and results.
