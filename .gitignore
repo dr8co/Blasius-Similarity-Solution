@@ -16,7 +16,10 @@ solution/*.o
 solution/CMake*
 solution/cmake*
 solution/.ninja*
+
 solution/*.ninja
+solution/blasius
+solution/*.csv
 
 # Other config directories
 .*/**

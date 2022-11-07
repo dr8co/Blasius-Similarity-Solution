@@ -74,7 +74,7 @@ The following boundary conditions are satisfied:
 * $(iii)$&emsp;At $y = \infty , \quad u = U.$
 
 The Blasius technique for an exact solution for the hydrodynamic layer
-lies in the conversion of the momentum equation and the continuity equation:
+lies in the conservation of the momentum equation and the continuity equation:
 
 $$
 \dfrac {\partial u}{\partial x} + \dfrac {\partial v}{\partial y}=0\\
