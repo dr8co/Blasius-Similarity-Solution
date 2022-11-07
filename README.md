@@ -276,7 +276,7 @@ $$
 The physical and transformed boundary conditions are:
 
 | Physical boundary conditions | Transformed boundary conditions                      |
-|------------------------------|------------------------------------------------------|
+|:----------------------------:|:----------------------------------------------------:|
 | at $y = 0, \quad u = 0$      | at $\eta = 0, \quad \dfrac {df}{d\eta} = f'= 0$      |
 | at $y = 0, \quad v = 0$      | at $\eta = 0, \quad f = 0$                           |
 | at $y = \infty, \quad u = U$ | at $\eta = \infty, \quad \dfrac {df}{d\eta} = f'= 1$ |
