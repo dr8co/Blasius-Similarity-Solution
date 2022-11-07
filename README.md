@@ -275,10 +275,10 @@ $$
 
 The physical and transformed boundary conditions are:
 
-| Physical boundary conditions | Transformed boundary conditions                      |
+| Physical boundary conditions |           Transformed boundary conditions            |
 |:----------------------------:|:----------------------------------------------------:|
-| at $y = 0, \quad u = 0$      | at $\eta = 0, \quad \dfrac {df}{d\eta} = f'= 0$      |
-| at $y = 0, \quad v = 0$      | at $\eta = 0, \quad f = 0$                           |
+|   at $y = 0, \quad u = 0$    |   at $\eta = 0, \quad \dfrac {df}{d\eta} = f'= 0$    |
+|   at $y = 0, \quad v = 0$    |              at $\eta = 0, \quad f = 0$              |
 | at $y = \infty, \quad u = U$ | at $\eta = \infty, \quad \dfrac {df}{d\eta} = f'= 1$ |
 
 _________________________________________________________
@@ -311,9 +311,12 @@ The data is written to a file, which can be accessed and evaluated.
 
 The code in this project requires at least **C++17** to run.
 Compile with flag `-std=c++17`.
-You can run the `run.sh` script in the [run_scripts directory](./run_scripts/) to run the solution,
-or with `CMake` and `Ninja build`
-using `run_with_cmake.sh`.
+You can run the `run.sh` script in the [scripts directory](./scripts/)
+from the project root to run the solution,
+or with `CMake` and `Ninja build` using `run_with_cmake.sh`.
 The script requires `CMake`version $\ge$ 3.20.
+
 Both scripts compile and run in
-`/solution/` directory in the working directory.
+`/solution/` directory in the working directory, but should be executed
+from the **project root**.
+`clean.sh` can be used to clean the compiled results.
