@@ -12,6 +12,8 @@
 #ifndef BLASIUS_BLASIUS_H
 #define BLASIUS_BLASIUS_H
 
+#define TOL 1e-12
+
 // function prototypes:
 double adjustGuess(double initialGuess);
 

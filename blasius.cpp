@@ -112,12 +112,12 @@ double adjustGuess(double initialGuess) {
 
     // Adjust the guess until it is optimum
     if (guess < 1) {
-        while (1 - rungeKutta(guess) >= 1e-12) {
+        while (1 - rungeKutta(guess) >= TOL) {
             guess += alpha * (1 - rungeKutta(guess));
         }
 
     } else {
-        while ((rungeKutta(guess) - 1) >= 1e-12) {
+        while ((rungeKutta(guess) - 1) >= TOL) {
             guess += alpha * (1 - rungeKutta(guess));
         }
     }
