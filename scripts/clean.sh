@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # Solution directory
 SOLUTION_DIR="$PWD/solution"

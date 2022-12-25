@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # Directory to compile to and to store the solution
 SOLUTION_DIR="$PWD/solution"
