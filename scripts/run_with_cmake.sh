@@ -9,10 +9,10 @@ if [ ! -d "$SOLUTION_DIR" ]; then
 fi
 
 # Generate build files using CMake and Ninja
-"$(which cmake)" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM="$(which ninja)" -G Ninja -S "$PWD" -B "$SOLUTION_DIR"
+"$(command -v cmake)" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM="$(command -v ninja)" -G Ninja -S "$PWD" -B "$SOLUTION_DIR"
 
 # Build the solution
-"$(which cmake)" --build "$SOLUTION_DIR" --target blasius -j 3
+"$(command -v cmake)" --build "$SOLUTION_DIR" --target blasius -j 3
 
 # Run the compiled executable
 cd "$SOLUTION_DIR" && ./blasius
