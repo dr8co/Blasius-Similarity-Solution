@@ -11,5 +11,11 @@ fi
 # Compile the code using GNU compiler
 c++ ./*.cpp headers/*.h -std=c++17 -o "$SOLUTION_DIR/blasius"
 
+cd "$SOLUTION_DIR"
+
 # Run the compiled executable
-cd "$SOLUTION_DIR" && ./blasius
+if [ -f blasius ]; then
+  ./blasius
+else
+  echo "Something went wrong."
+fi
