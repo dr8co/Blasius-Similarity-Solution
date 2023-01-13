@@ -309,14 +309,20 @@ The data is written to a file, which can be accessed and evaluated.
 
 ## Running the solution
 
+### Manual compilation
+
 The code in this project requires at least **C++17** to run.
 Compile with flag `-std=c++17`.
-You can run the `run.sh` script in the [scripts directory](./scripts/)
-from the project root to run the solution,
-or with `CMake` and `Ninja build` using `run_with_cmake.sh`.
-The script requires `CMake`version $\ge$ 3.20.
 
-Both scripts compile and run in
+### Using the shell scripts (Linux/macOS)
+
+You can run the [run.sh script](./run.sh)
+from the project root to run the solution,
+or with `CMake` and `Ninja build` using [run_with_cmake.sh](./run_with_cmake.sh).
+The script requires `CMake`version $\ge$ 3.20 and a decent C++ compiler.
+
+Both scripts compile and run the solution in the
 `/solution/` directory in the working directory, but should be executed
 from the [**project root**](./).
-`clean.sh` can be used to clean the compiled files and results.
+
+[clean.sh](./clean.sh) can be used to clean the compiled files and results.
