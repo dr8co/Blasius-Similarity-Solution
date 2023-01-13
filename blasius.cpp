@@ -175,10 +175,10 @@ void blasius(double f_p_p) {
                   << ", f\' = " << f_p << ", f\" = " << f_p_p << std::endl;
 
         // update the solution data
-        eta_vec.push_back(eta);
-        f_vec.push_back(f);
-        fPrime_vec.push_back(f_p);
-        fDoublePrime_vec.push_back(f_p_p);
+        eta_vec.emplace_back(eta);
+        f_vec.emplace_back(f);
+        fPrime_vec.emplace_back(f_p);
+        fDoublePrime_vec.emplace_back(f_p_p);
 
         // Update f, f_p, and f_p_p
         f += (k1 + 2 * k2 + 2 * k3 + k4) / 6;
