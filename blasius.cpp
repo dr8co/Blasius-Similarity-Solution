@@ -197,7 +197,7 @@ void blasius(double f_p_p) {
     file.open(file_path, std::ios::out | std::ios::trunc);
     file << "eta," << "f," << "fPrime," << "fDoublePrime" << std::endl;
 
-    for (int j = 0; j < eta_vec.size(); ++j) {
+    for (int j = 0; j < (static_cast<int>(eta_vec.size())); ++j) {
         file << std::setprecision(12) << eta_vec[j] << "," << f_vec[j] << "," << fPrime_vec[j] << ","
              << fDoublePrime_vec[j] << "\n";
     }
