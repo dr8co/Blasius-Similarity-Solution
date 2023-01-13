@@ -16,7 +16,7 @@
 #include <filesystem>
 #include <cmath>
 
-#include "headers/blasius.h"
+#include "blasius.h"
 
 double
 f_1([[maybe_unused]] double a, [[maybe_unused]] double b, double c, [[maybe_unused]] double d) {

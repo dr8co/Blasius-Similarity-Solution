@@ -3,7 +3,7 @@ project(blasius CXX)
 
 set(CMAKE_CXX_STANDARD 23)
 
-include_directories(${PROJECT_SOURCE_DIR}/headers)
+include_directories(${PROJECT_SOURCE_DIR})
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -pedantic -Ofast")
 

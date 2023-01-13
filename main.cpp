@@ -13,7 +13,7 @@
 #include <iomanip>
 #include <random>
 
-#include "headers/blasius.h"
+#include "blasius.h"
 
 int main() {
     std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~ Blasius Numerical Solution ~~~~~~~~~~~~~~~~~~~~~~~~~ \n" << std::endl;
