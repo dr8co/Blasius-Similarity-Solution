@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Run from this directory.
+cd "${0%/*}" || exit 1
+
 # Solution directory
 SOLUTION_DIR="$PWD/solution"
 
